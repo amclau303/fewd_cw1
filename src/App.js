@@ -1,14 +1,17 @@
-import './App.css';
+import React from 'react';
+import { Routes, BrowserRouter, Route } from "react-router-dom";
+import Index from "./components/Index";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route path="/" element={<Index />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
