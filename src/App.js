@@ -2,6 +2,8 @@ import React from 'react';
 import { Routes, BrowserRouter, Route } from "react-router-dom";
 import Index from "./components/Index";
 import Navigation from "./components/Navigation";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "leaflet/dist/leaflet.css";
 
 function App() {
   return (

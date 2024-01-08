@@ -10,7 +10,7 @@ const useFetchData = () => {
         phone:"",
         email:"",
         description:"",
-        location:["", ""],
+        location:"",
         cafe:"",
         ratings:["", ""]
       }]);
