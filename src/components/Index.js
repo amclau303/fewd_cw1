@@ -4,6 +4,9 @@ import DisplayHostelList from "./DisplayHostelList";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+const passport = require('passport');
+require('dotenv').config();
+
 
 function Index() {
   return (
@@ -14,7 +17,7 @@ function Index() {
         </Col>
         <Col id="map">
           <h1>Where we are</h1>
-          <Col><Map /></Col>
+          <Col><Map /> </Col>
         </Col>
         <Col class="d-flex">
           <h1>Hostel List</h1>
